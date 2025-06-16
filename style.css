@@ -2,21 +2,26 @@
 body {
     font-family: 'Segoe UI', sans-serif;
     background-color: #f3e5ab; /* light chocolate beige */
-    color: #3e2723; /* dark chocolate brown */
+    color: #3e2723;
     margin: 0;
     padding: 0;
     text-align: center;
 }
 
-.logo {
-    max-width: 180px;
-    margin: 20px auto;
-    display: block;
+.hero {
+    background-color: #f3e5ab;
+    padding: 20px;
 }
 
-.main-image {
-    width: 90%;
-    max-width: 600px;
+.hero-logo {
+    max-width: 100%;
+    height: auto;
+    max-height: 300px;
+}
+
+.small-image {
+    width: 70%;
+    max-width: 300px;
     margin: 10px auto;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -28,10 +33,34 @@ h1 {
     color: #4e342e;
 }
 
-.about, .contact {
+.about, .contact, .contact-form {
     padding: 20px;
     max-width: 700px;
     margin: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+input, textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+button {
+    padding: 12px;
+    background-color: #a1887f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
 }
 
 a {
